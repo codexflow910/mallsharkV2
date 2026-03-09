@@ -1,0 +1,58 @@
+<?php
+
+return [
+    App\Providers\AppServiceProvider::class,
+    App\Providers\AuthServiceProvider::class,
+    App\Providers\EventServiceProvider::class,
+    App\Providers\RouteServiceProvider::class,
+
+    // Third-party Service Providers
+    Nahid\Talk\TalkServiceProvider::class,
+    App\minifymaster\src\ServiceProvider::class,
+    Intervention\Image\ImageServiceProvider::class,
+
+    // Custom Package Service Providers - V1
+    Packages\Core\Providers\CoreServiceProvider::class,
+    Packages\Admin\Providers\AdminServiceProvider::class,
+    Packages\Product\Providers\ProductServiceProvider::class,
+    Packages\Store\Providers\StoreServiceProvider::class,
+    Packages\Discount\Providers\DiscountServiceProvider::class,
+    Packages\SocialLogin\Providers\SocialLoginServiceProvider::class,
+    Packages\Import\Providers\CsvServiceProvider::class,
+    Packages\Import\Providers\ShopifyServiceProvider::class,
+    Packages\Stripe\Providers\StripeServiceProvider::class,
+    Packages\Order\Providers\OrderServiceProvider::class,
+    Packages\Klavio\Providers\KlavioServiceProvider::class,
+    Packages\Report\Providers\ReportServiceProvider::class,
+    Packages\Dashboard\Providers\DashboardServiceProvider::class,
+    Packages\Auth\Providers\AuthServiceProvider::class,
+    Packages\Notifications\Providers\NotificationsServiceProvider::class,
+    Packages\Search\Providers\SearchServiceProvider::class,
+    Packages\Review\Providers\ReviewServiceProvider::class,
+    Packages\Shipping\Providers\ShippingServiceProvider::class,
+    Packages\Home\Providers\HomeServiceProvider::class,
+    Packages\Cart\Providers\CartServiceProvider::class,
+
+    // Custom Package Service Providers - V2
+    Packages\Core\Providers\V2\CoreServiceProvider::class,
+    Packages\Admin\Providers\V2\AdminServiceProvider::class,
+    Packages\Product\Providers\V2\ProductServiceProvider::class,
+    Packages\Store\Providers\V2\StoreServiceProvider::class,
+    Packages\Distributors\Providers\V2\DistributorServiceProvider::class,
+    Packages\Discount\Providers\V2\DiscountServiceProvider::class,
+    Packages\SocialLogin\Providers\V2\SocialLoginServiceProvider::class,
+    Packages\Import\Providers\V2\CsvServiceProvider::class,
+    Packages\Import\Providers\V2\ShopifyServiceProvider::class,
+    Packages\Stripe\Providers\V2\StripeServiceProvider::class,
+    Packages\Order\Providers\V2\OrderServiceProvider::class,
+    Packages\Klavio\Providers\V2\KlavioServiceProvider::class,
+    Packages\Report\Providers\V2\ReportServiceProvider::class,
+    Packages\Dashboard\Providers\V2\DashboardServiceProvider::class,
+    Packages\Auth\Providers\V2\AuthServiceProvider::class,
+    Packages\Notifications\Providers\V2\NotificationsServiceProvider::class,
+    Packages\Search\Providers\V2\SearchServiceProvider::class,
+    Packages\Review\Providers\V2\ReviewServiceProvider::class,
+    Packages\Shipping\Providers\V2\ShippingServiceProvider::class,
+    Packages\Home\Providers\V2\HomeServiceProvider::class,
+    Packages\Cart\Providers\V2\CartServiceProvider::class,
+];

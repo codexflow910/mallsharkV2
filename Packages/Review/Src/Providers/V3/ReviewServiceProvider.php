@@ -1,0 +1,35 @@
+<?php
+
+namespace Packages\Review\Providers\V3;
+
+use Illuminate\Support\ServiceProvider;
+use Packages\Review\Repositories\Eloquent\V3\ReviewRepository;
+use Packages\Review\Services\V3\ReviewService;
+
+class ReviewServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        // Register services
+        $this->app->singleton(ReviewService::class, function ($app) {
+            return new ReviewService($app->make(ReviewRepository::class));
+        });   
+
+        // Merge config
+        $this->mergeConfigFrom(__DIR__.'/../../../Config/config.php', '');
+
+        // Load constants
+        require_once __DIR__.'/../../../Config/constants.php';
+    }
+
+    public function boot()
+    {
+        // Load routes
+        $this->loadRoutesFrom(__DIR__.'/../../../Routes/api.php');
+
+        // Publish config
+        $this->publishes([
+            __DIR__.'/../../../Config/config.php' => config_path('dashboard.php'),
+        ], 'dashboard-config');
+    }
+}

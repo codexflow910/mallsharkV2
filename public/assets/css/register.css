@@ -1,0 +1,66 @@
+.col.text-center.main-logo.register-forgort-logo img {
+    max-width: 150px;
+    margin: auto;
+    margin-top: 4px;
+}
+.mall-shark-section h1 {
+    font-size: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.signbxin.border.radius.recovery-password {
+    box-shadow: 0px 3px 6px #00000029 !important;
+border: 5px solid #0510FA !important;
+border-radius: 36px !important;
+background-color: #fff;
+}
+.signbxin.border.radius.recovery-password p .btn-primary{
+    border-radius: 24px;
+    background-color: #0510FA;
+    padding: 8px 85px;
+
+}
+.signbx  .signbxin {
+    padding: 30px 25px !important;
+}
+.background-color-wrapper {
+    background-color: #F9FBFE;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    min-height: 340px;
+    margin-top: -130px;
+}
+body.mall-shark-section h2 {
+    font-size: 16px;
+    text-align: center;
+    margin: 18px;
+}
+.signbxin.border.radius {
+    max-width: 500px;
+    margin: auto;
+}
+.jssocials-share-logo {
+    width: 20px !important;
+    vertical-align: middle;
+    font-size: 1.5em;
+    height: 23px !important;
+}
+footer#footer {
+    border-top: 1px solid #d3d3d3;
+    margin-top: 50px;
+}
+.signbx {
+    min-height: 500px;
+}
+.jssocials-share {
+    max-width: 30px !important;
+    display: inline !important;
+    padding: 10px !important;
+}
+.qckcnt.text-center {
+    margin-top: 30px;
+}
+span.error {
+    color: red;
+}

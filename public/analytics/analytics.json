@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "handy-vortex-244008",
+  "private_key_id": "a8b945e9cfc99a8060f0dd6beb86289845b39eef",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCgdeHT4P5Rcv3N\n7xKTRKu4URzl0aAEIu/mHVhuEiWi0bajGRA+zb5+cx+eW3O7OhdawsNZIj4eH3YK\nFGt3yiAq6aHls8FvtyWauQbPjlqd0jDqVXw/Cfo/Srw79WVPHKPlnmVAWWtxQrKp\nusHfb2vA0aBVv5nHMxDXZNSoFRGcO8ej0zmV6Vxy3lTl2a1xTpeU9eQgbvJOYgac\nSaniPPSStfeVSLEAPv2OaX8T0zdSv8SohnDPPgAXu5EByiNRORX13gdr2LTLuiZQ\nebDHwEdz0QI8WwN6T0HAmIMzet3vfUI3mx/NudmP1Q0Xuz4hw5lcOExrRpBIsvCv\nugv5eEAzAgMBAAECggEAEGRagJGgiWOM6Ae/Rwoh3L90i0nB5gpHpaNj0ELMU3jH\nBpxd23ybNEHAfiXribnifuQcnrNv0xX1sgvp+p/Mb3XUkyms3iPAlLDIMFXjjfHW\nC2pWOf5j8SlKV3m3MsDDQYbP4yX/Yt+kbtBkU9YHFPiVP41GQWJHGynyy4Tzepk7\nQFJ/KGRb5dPOX5EFP2KGPMiWJIdhP2Af7bNx+p4PAcYwsXJMLfslQhHLFvRzOVdm\nmIJ+PdTseveK+MRHHdztpD7KF/fUedIXmYPP5KUmpuiAvsltBntQL2FDUp3xo82q\nLoT2he9p9YRi4omsJZB7ZoCJuBo0mHNpZMTTJWbY8QKBgQDa7dNQgUsU+En7QW17\ng5LcGPVgHpJeq+qtzHfE2EK6ts58kl6Hwo+UMmZTWD4Z2C36OFDNFG3YTsiX/IgF\nwyunj9r7q25vYnVCWYyLKcN+B6gXCkqHfOsmKGhgnYjxsO45+9muhu66NgtxNx6z\nUgG/pglkx6f7pz5wIo/I0h5zOwKBgQC7oY1e7sgZljLCqpogGC+HqSrPI7hWCxuk\nTJzfHBm/gWN3gebZRpUEv5SyVp1n5ZxO+Q7gUuCV6cGItIeFXUJ8T29vrOq7bOsN\n9t9T3fUDY2XEkIrtjwZS75TwxFEf1h7YDBFlPFGblkQbP9b7LrcRnY+Fw9F8ekyz\n74qzVXcnaQKBgHmcxNaii8ehSM9mf9+trgXPY3a6ZMpsK1fSDfHtw9ueMsOmNxao\n8EL9YDQJ/60xlhC5+cCCCaav1OQAprq0uOpCkf1dNGJxSfvKbLTdRTgcHrZ1xALR\nVHqE1b5dpDXF9/+DtF8rmy8bWG3SlZ48/rWsEOnHsrurIpb9y+tdNQcDAoGAeZUG\nyYRLL6FPRStNcgyaB/tLnSwVT9Qk1kM6x6wq1xhdvtvzHcoJ2CjYjvNnTiLQNbBX\nvm6Vzy7I1O++fWHgKjNDD4dqF4dNjR/yuSKzmL14/XV4QNWUEHvk9FsSAmI6XF79\niq8aZoppmYq1oNA1mnmRvekUvud0+of3RZvU+TkCgYEAtGr2+FG/lESOVsfcTp0f\nUrktkBo4yJ5+jusDRl2UrwYZ7bvfSPw51szimrEdCWFw0lEbJpR4PRBOGbtH1viX\nRh9/VucGuY9TAwJVxZQ0XttehSTVXy5R3SR+/lHgQo4RzIvH05LAghHIjnENju9b\n6d0FDmUpOz61iHTdtWy7Tco=\n-----END PRIVATE KEY-----\n",
+  "client_email": "google-analytics@handy-vortex-244008.iam.gserviceaccount.com",
+  "client_id": "101987808528755799255",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-analytics%40handy-vortex-244008.iam.gserviceaccount.com"
+}

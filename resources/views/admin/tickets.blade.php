@@ -1,0 +1,282 @@
+@extends('layouts.new-main')
+<!-- Main Banner Starts -->
+@section('content')
+@section('title', 'Ticket')
+<!-- Content Starts -->
+<main>
+    @include('admin.adminsidebar')
+
+    <section>
+        <div class="tickets-listing">
+            <div class="container">
+                <div class="site-inner">
+                    <div class="support-landing">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="support-heading text-center colr-orange">Support &amp; Help </h2>
+                                <div class="support-box">
+                                    <div class="ticket-panel">
+                                        <ul class="nav nav-tabs nav-justified">
+                                            <li class="nav-item"><a  class="nav-link active" data-toggle="tab" href="#open-tickets" aria-expanded="false" > Open Tickets</a></li>
+                                            <li class="active nav-item"><a class="nav-link" data-toggle="tab" href="#closed-tickets" aria-expanded="true">Closed Tickets</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="open-tickets" class="tab-pane active">
+
+                                                <ul class="ticketing-listing">
+                                                    <li>
+                                                        <div class="flex-container ticket-box">
+                                                            <div class="flex-box width10">
+                                                                <div class="ticket-category">
+                                                                    <span> Technical </span>
+                                                                </div>
+                                                                <div class="ticket-logo Aligner-item">
+                                                                    <span>
+                                                                        <i class="fa fa-support" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-box width75 Aligner-item">
+                                                                <h4><a href="#"><span>Ticket #452666:</span> I cannot log into my account after changed my password.</a></h4>
+                                                                <h5>12 March 2017</h5>
+                                                            </div>
+                                                            <div class="flex-box width15">
+                                                                <button type="submit" class="btn btn-primary text-white" id="">
+                                                                    <span class="small-screen-btn">Reopen</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <div class="flex-container ticket-box">
+                                                            <div class="flex-box width10">
+                                                                <div class="ticket-category">
+                                                                    <span> Technical </span>
+                                                                </div>
+                                                                <div class="ticket-logo Aligner-item">
+                                                                    <span>
+                                                                        <i class="fa fa-support" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-box width75 Aligner-item">
+                                                                <h4><a href="#"><span>Ticket #452666:</span> I cannot log into my account after changed my password.</a></h4>
+                                                                <h5>12 March 2017</h5>
+                                                            </div>
+                                                            <div class="flex-box width15">
+                                                                <button type="submit" class="btn btn-primary text-white" id="">
+                                                                    <span class="small-screen-btn">Reopen</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="flex-container ticket-box">
+                                                            <div class="flex-box width10">
+                                                                <div class="ticket-category">
+                                                                    <span> Technical </span>
+                                                                </div>
+                                                                <div class="ticket-logo Aligner-item">
+                                                                    <span>
+                                                                        <i class="fa fa-support" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-box width75 Aligner-item">
+                                                                <h4><a href="#"><span>Ticket #452666:</span> I cannot log into my account after changed my password.</a></h4>
+                                                                <h5>12 March 2017</h5>
+                                                            </div>
+                                                            <div class="flex-box width15">
+                                                                <button type="submit" class="btn btn-primary text-white" id="">
+                                                                    <span class="small-screen-btn">Reopen</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="flex-container ticket-box">
+                                                            <div class="flex-box width10">
+                                                                <div class="ticket-category">
+                                                                    <span> Technical </span>
+                                                                </div>
+                                                                <div class="ticket-logo Aligner-item">
+                                                                    <span>
+                                                                        <i class="fa fa-support" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-box width75 Aligner-item">
+                                                                <h4><a href="#"><span>Ticket #452666:</span> I cannot log into my account after changed my password.</a></h4>
+                                                                <h5>12 March 2017</h5>
+                                                            </div>
+                                                            <div class="flex-box width15">
+                                                                <button type="submit" class="btn btn-primary text-white" id="">
+                                                                    <span class="small-screen-btn">Reopen</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+
+
+                                                </ul>
+                                            </div><!-- open-tickets -->
+                                            <div id="closed-tickets" class="tab-pane ">
+                                                <ul class="ticketing-listing">
+                                                    <li>
+                                                        <div class="flex-container ticket-box">
+                                                            <div class="flex-box width10">
+                                                                <div class="ticket-category">
+                                                                    <span> Social </span>
+                                                                </div>
+                                                                <div class="ticket-logo Aligner-item">
+                                                                    <span>
+                                                                        <i class="fa fa-support" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-box width75 Aligner-item">
+                                                                <h4><a href="#"><span>Ticket #452666:</span> I cannot log into my account after changed my password.</a></h4>
+                                                                <h5>12 March 2017</h5>
+                                                            </div>
+                                                            <div class="flex-box width15">
+                                                                <button type="submit" class="btn btn-primary text-white" id="">
+                                                                    <span class="small-screen-btn">Reopen</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <div class="flex-container ticket-box">
+                                                            <div class="flex-box width10">
+                                                                <div class="ticket-category">
+                                                                    <span> Technical </span>
+                                                                </div>
+                                                                <div class="ticket-logo Aligner-item">
+                                                                    <span>
+                                                                        <i class="fa fa-support" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-box width75 Aligner-item">
+                                                                <h4><a href="#"><span>Ticket #452666:</span> I cannot log into my account after changed my password.</a></h4>
+                                                                <h5>12 March 2017</h5>
+                                                            </div>
+                                                            <div class="flex-box width15">
+                                                                <button type="submit" class="btn btn-primary text-white" id="">
+                                                                    <span class="small-screen-btn">Reopen</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="flex-container ticket-box">
+                                                            <div class="flex-box width10">
+                                                                <div class="ticket-category">
+                                                                    <span> Billing </span>
+                                                                </div>
+                                                                <div class="ticket-logo Aligner-item">
+                                                                    <span>
+                                                                        <i class="fa fa-support" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-box width75 Aligner-item">
+                                                                <h4><a href="#"><span>Ticket #452666:</span> I cannot log into my account after changed my password.</a></h4>
+                                                                <h5>12 March 2017</h5>
+                                                            </div>
+                                                            <div class="flex-box width15">
+                                                                <button type="submit" class="btn btn-primary text-white" id="">
+                                                                    <span class="small-screen-btn">Reopen</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="flex-container ticket-box">
+                                                            <div class="flex-box width10">
+                                                                <div class="ticket-category">
+                                                                    <span> Sales </span>
+                                                                </div>
+                                                                <div class="ticket-logo Aligner-item">
+                                                                    <span>
+                                                                        <i class="fa fa-support" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-box width75 Aligner-item">
+                                                                <h4><a href="#"><span>Ticket #452666:</span> I cannot log into my account after changed my password.</a></h4>
+                                                                <h5>12 March 2017</h5>
+                                                            </div>
+                                                            <div class="flex-box width15">
+                                                                <button type="submit" class="btn btn-primary text-white" id="">
+                                                                    <span class="small-screen-btn">Reopen</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="cant-find-answer col-md-4 col-md-offset-4">
+                                            <h5>
+                                                <a href="#" id="file-ticket1" data-toggle="modal" data-target="#submit-ticketform" class="btn btn-default topbtn1">Add new Ticket</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <!-- /.ticket-panel -->
+                                </div>
+                                <!-- /.support-box -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div id="submit-ticketform" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                    <h4 class="modal-title">Your Ticket</h4>
+                                    <h5 class="response-div"></h5>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="" method="POST" id="submit_ticket_form">
+                                        <div class="form-group">
+                                            <input type="hidden" name="action" value="zendesk_add_ticket">
+                                            <label for="email">Subject:</label>
+                                            <input name="subject" type="text" class="form-control" id="ticket_subject">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd">Your Ticket Description:</label>
+                                            <textarea name="message" class="form-control large-field" id="ticket_message"></textarea>
+                                        </div>
+                                        <div class="submit-btn-pop clearfix">
+                                            <button type="submit" class="btn btn-default">Submit Your Ticket</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.support-landing -->
+                </div>
+            </div>
+        </div>
+        <!-- tickets-listing -->
+    </section>
+
+
+
+    @endsection

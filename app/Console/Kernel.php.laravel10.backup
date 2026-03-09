@@ -1,0 +1,80 @@
+<?php
+
+namespace App\Console;
+
+use App\Console\Commands\ActivateSlideSets;
+use App\Console\Commands\DistributorExpiryNotifications;
+use App\Console\Commands\dynamicSiteMap;
+use App\Console\Commands\PackageExpired;
+use App\Console\Commands\TransferVendorPayments;
+use App\Console\Commands\RecommondedProducts;
+use App\Console\Commands\ShipstationSyncOrderOnHold;
+use Illuminate\Console\Scheduling\Schedule;
+use App\Console\Commands\SendLowStockNotifications;
+use App\Console\Commands\CleanUnpaidOrders;
+use App\Console\Commands\RegenerateFacebookFeed;
+use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use App\Console\Commands\ClearTempUploads;
+class Kernel extends ConsoleKernel
+{
+    /**
+     * The Artisan commands provided by your application.
+     *
+     * @var array
+     */
+    protected $commands = [
+
+        'App\Console\commands\RunCampaign',
+        'App\Console\commands\BrandsSale',
+        'App\Console\commands\FeatureProductExpire',
+        TransferVendorPayments::class,
+        dynamicSiteMap::class,
+        RecommondedProducts::class,
+        ShipstationSyncOrderOnHold::class,
+        PackageExpired::class,
+        ActivateSlideSets::class,
+
+        
+        SendLowStockNotifications::class,
+        DistributorExpiryNotifications::class,
+        CleanUnpaidOrders::class,
+        RegenerateFacebookFeed::class,
+        ClearTempUploads::class
+    ];
+
+    /**
+     * Define the application's command schedule.
+     *
+     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+     * @return void
+     */
+    protected function schedule(Schedule $schedule)
+    {
+        $schedule->command('discounts:update-status')->everyMinute();
+        $schedule->command('site:map')->dailyAt('00:00');
+        $schedule->command('algolia:batch-update')->everyMinute();
+        $schedule->command('recommended:generate')->everyTenMinutes();
+        $schedule->command('slides:set-activate')->everyThirtyMinutes();
+        $schedule->command('package:check-expired')->daily(); 
+        $schedule->command('ai:reset-quota')->monthlyOn(1, '00:00');
+        $schedule->command('send:low-stock-notifications')->daily();
+        $schedule->command('shipstation:change-order-status')->everyMinute();
+        $schedule->command('distributor:license-expired')->daily();
+        $schedule->command('products:algolia-syncing')->everyThirtyMinutes();
+        $schedule->command('orders:cleanup')->weekly();
+        $schedule->command('facebook:regenerate-feed')->everyTenMinutes();
+        $schedule->command('clear:temp-uploads')->monthlyOn(1, '12:00');
+    }
+
+    /**
+     * Register the commands for the application.
+     *
+     * @return void
+     */
+    protected function commands()
+    {
+        $this->load(__DIR__.'/Commands');
+
+        require base_path('routes/console.php');
+    }
+}

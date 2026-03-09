@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "8V453LX6CQ.org.reactjs.native.example.MallSharkMobile",
+        "paths": [ "/product/*", "/" ]
+      }
+    ]
+  }
+}

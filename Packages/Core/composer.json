@@ -1,0 +1,8 @@
+{
+   
+    "autoload": {
+        "psr-4": {
+            "Packages\\Core\\": "Packages/Core/Src/"
+        }
+    }
+}

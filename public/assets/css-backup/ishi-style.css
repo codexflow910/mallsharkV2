@@ -1,0 +1,70 @@
+/* 
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0510fa ;
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px 12px 0 0;
+}
+.subheading {
+    font-size: 14px;
+    text-align: right;
+    color: #ffffff;
+}
+.subheading span {
+    color: #ffffff;
+}
+.pymntslct button {
+    width: 100%;
+    margin: 0;
+    border-radius: 32px;
+}
+#place-order-btn{
+    background-color: #0510fa!important;
+    Color: #fff
+}
+
+
+
+ 
+
+
+.chkout {margin-top: 20px; padding: 0;}
+.row{padding: 0;}
+.ttlbx {font-size: 22px;}
+.ttlbx .prcbx { font-size: 22px;}
+.prdcl {padding-right: 0;}
+.chkout h2 {font-size: 16px!important;}
+.subheading {font-size: 11px;}
+.subheading img {width: 20px;}
+.shpnginf { position: absolute; top: 55px; font-size: 12px; width: 132px; left: 0px;}
+.pymntslct button {width: 100%; margin: 0; min-width: 368px;}
+button#btn1 {border-right: 1px solid #2525b3;}
+.cell select { min-width: 115px;}
+
+
+.qty-input { display: flex;}
+.scrollbar-cntnt .adfv {padding:0px!important;}
+.color-andweigh .adfv  { padding: 0px!important;}
+.color-andweight.mt-3 a {padding: 0px!important;}
+.lst-hd-sbm span{min-width:140px}
+.view-basket { margin-top: 20px; margin-bottom: 12px;}
+.nwmnot .btn-primar {border: 1px solid #0510fa!important;}
+.nwmnot .btn-primary:hover {background-color: #fff; border: 1px solid #0510fa!important; color:#0510fa!important}
+.cart-class { font-size: 22px;}
+.cart-left-content{box-shadow: 0 0 10px #00000040; border-radius: 12px; border: 0px;}
+.cart-item-table {border: 0px solid #ddd;}
+.crtpgttl{padding: 30px; border-bottom: 1px solid #d3d3d3;}
+.total-amount{font-size: 18px!important;}
+input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;}
+input[type=number] {-moz-appearance:textfield;}
+.inrlop{padding: 15px 30px;}
+.qty-add { position: relative;  top: 15px;}
+.product-price { position: relative; top: 12px;}
+.prcbxin{font-size: 18px; font-weight: bold;}
+.grand-total-text { color: #858997; font-weight: normal;}
+.crtpgttl .col-md-3:last-child{text-align: right;} */

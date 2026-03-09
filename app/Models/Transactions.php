@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Transactions extends Model {
+
+    protected $primaryKey = 'trans_id';
+    protected $table = 'transactions';
+    
+
+}

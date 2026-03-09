@@ -1,0 +1,122 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laravel/scout": "^10.0",
+        "algolia/algoliasearch-client-php": "^3.0",
+        "aloha/twilio": "^4.0",
+        "automattic/woocommerce": "^3.1",
+        "barryvdh/laravel-dompdf": "^2.0",
+        "doctrine/dbal": "^3.0",
+        "easypost/easypost-php": "^6.2",
+        "elasticsearch/elasticsearch": "^7.0",
+        "google/apiclient": "^2.0",
+        "guzzlehttp/guzzle": "^7.3",
+        "huddledigital/zendesk-laravel": "^3.6",
+        "intervention/image": "^2.7",
+        "jenssegers/agent": "^2.6",
+        "klaviyo/php-sdk": "*",
+        "kriswallsmith/buzz": "^1.2",
+        "laravel/cashier": "^15.0",
+        "laravel/framework": "^11.0",
+        "laravel/helpers": "^1.4",
+        "laravel/passport": "^12.0",
+        "laravel/socialite": "^5.12",
+        "laravel/tinker": "^2.9",
+        "laravel/ui": "^4.5",
+        "laraveldaily/laravel-charts": "^0.1.25",
+        "maatwebsite/excel": "^3.1",
+        "mailgun/mailgun-php": "^3.5",
+        "nahid/talk": "^2.4",
+        "nwidart/laravel-modules": "^11.0",
+        "nyholm/psr7": "^1.4",
+        "paypal/rest-api-sdk-php": "^1.6",
+        "phpclassic/php-shopify": "^1.2",
+        "romanzipp/laravel-turnstile": "^1.3",
+        "scssphp/scssphp": "^1.10.3",
+        "sentry/sentry-laravel": "^4.0",
+        "shopify/shopify-api": "^4.2",
+        "spatie/laravel-analytics": "^5.0",
+        "spatie/laravel-sitemap": "^7.0",
+        "stripe/stripe-php": "^13.0",
+        "tedivm/jshrink": "~1.0"
+    },
+    "require-dev": {
+        "spatie/laravel-ignition": "^2.4",
+        "fakerphp/faker": "^1.23",
+        "laravel/sail": "^1.26",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/",
+            
+            "Packages\\Core\\": "Packages/Core/Src/",
+            "Packages\\Admin\\": "Packages/Admin/Src/",
+            "Packages\\Product\\": "Packages/Product/Src/",
+            "Packages\\Store\\": "Packages/Store/Src/",
+            "Packages\\Discount\\": "Packages/Discount/Src/",
+            "Packages\\SocialLogin\\": "Packages/SocialLogin/Src/",
+            "Packages\\Import\\": "Packages/Import/Src/",
+            "Packages\\Stripe\\": "Packages/Stripe/Src/",
+            "Packages\\Order\\": "Packages/Order/Src/",
+            "Packages\\Klavio\\": "Packages/Klavio/Src/",
+            "Packages\\Report\\": "Packages/Report/Src/",
+            "Packages\\Dashboard\\": "Packages/Dashboard/Src/",
+            "Packages\\Auth\\": "Packages/Auth/Src/",
+            "Packages\\Notifications\\": "Packages/Notifications/Src/",
+            "Packages\\Search\\": "Packages/Search/Src/",
+            "Packages\\Review\\": "Packages/Review/Src/",
+            "Packages\\Shipping\\": "Packages/Shipping/Src/",
+            "Packages\\Home\\": "Packages/Home/Src/",
+            "Packages\\Cart\\": "Packages/Cart/Src/",
+            "Packages\\Distributors\\": "Packages/Distributors/Src/",
+            "Modules\\": "Modules/"
+        },
+        "files": [
+            "app/Http/helpers.php",
+            "app/Constants.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true,
+            "wikimedia/composer-merge-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,8 @@
+{
+   
+    "autoload": {
+        "psr-4": {
+            "Packages\\Admin\\": "Packages/Admin/Src/"
+        }
+    }
+}
