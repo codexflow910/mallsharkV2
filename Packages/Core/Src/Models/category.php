@@ -3,6 +3,7 @@
 namespace Packages\Core\Models;
 
 use Packages\Product\Models\Product;
+use Packages\Product\Models\V3\CategoryFilter;
 use Illuminate\Database\Eloquent\Model;
 
 
@@ -24,6 +25,11 @@ class Category extends Model
     public function products()
     {
         return $this->belongsToMany(Product::class, 'product_category', 'category_id', 'product_id');
+    }
+
+    public function filters()
+    {
+        return $this->hasMany(CategoryFilter::class, 'category_id', 'id');
     }
 
     // public function applicables()
